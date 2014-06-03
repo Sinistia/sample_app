@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'spork'
-
+require 'capybara'
 Spork.prefork do
   ENV["RAILS_ENV"] ||= 'test'
   require File.expand_path("../../config/environment", __FILE__)
